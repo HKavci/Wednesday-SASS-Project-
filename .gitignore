@@ -1,0 +1,37 @@
+scss ile ilgili dosyaları scss klasörüne atacağım.
+scss klasörü içinde bütün partial dosyalarını import edip bağlayacağım bir main.scss dosyası oluşturdum.
+
+abstract ın içinde mixin, variables vb olacak.
+partial dosyası olduğu için isimlendirmeye "_" ile başladım. Bu partial dosyaları tek başına bir anlam ifade etmiyor. Ben bunları main dosyama import ettiğim zaman bir anlam ifade edecek.
+
+base klasörü içinde _reset.scss dosyası oluşturdum. Bu dosyanın içinde margin, padding sıfırlama vs var.
+
+sass --watch ./scss/main.scss:./css/main.css
+bash terminalinde yukarıdaki komutu yazarak terminalimin scss klasöründeki main.scss dosyasını izlemesini ve css klasörü içerisinde main.css adında bir dosya oluşturmasını sağladım.
+
+index.html içerisine girdim. ve <link rel="stylesheet" href="./css/main.css"> diyerek main.css dosyasını bağladım. Burada scss dosyası değil, css dosyası bağlanır. Zaten terminalim scss dosyasını izleyip, css içerisine otomatik olarak bilgileri atacak.
+
+main.scss dosyası içerisine bütün partial leri import ettim.
+
+.nav {
+    &__list
+} 
+nav class ı içindeki nav__list class ına ulaşmamı kısayoldan sağlar.
+
+
+fontawesome dan alınan ikonlar fontawesome cdn deki url kopyalanarak main.scss e import edildi. Bunu yapmazsak ikonları çekmez. Normalde html head içerisinde link ile çağırıyoruz ama burada bu şekilde yaptık daha kolay olarak.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
