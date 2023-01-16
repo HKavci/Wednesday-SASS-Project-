@@ -21,6 +21,16 @@ nav class ı içindeki nav__list class ına ulaşmamı kısayoldan sağlar.
 
 fontawesome dan alınan ikonlar fontawesome cdn deki url kopyalanarak main.scss e import edildi. Bunu yapmazsak ikonları çekmez. Normalde html head içerisinde link ile çağırıyoruz ama burada bu şekilde yaptık daha kolay olarak.
 
+Media query leri mixin içerisinde tanımladım.
+@media screen and (min-width: 576px) {
+        @content
+    }
+Yukarıda yazdığım ekran boyutu 576px in üzerine çıktığı yazdığım contenti yani içeriği göster demek oluyor.
+
+
+
+
+BIO kısmının responsive likte overflow hidden scroll vs düzeltme yapılması lazım.
 
 
 
